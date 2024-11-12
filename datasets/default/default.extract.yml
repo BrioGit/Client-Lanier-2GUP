@@ -1,0 +1,236 @@
+extract:
+  Account:
+    fields:
+    - Description
+    - Fax
+    - Name
+    - AccountNumber
+    - Phone
+    - Rating
+    - Site
+    - AccountSource
+    - Type
+    - AnnualRevenue
+    - BillingCity
+    - BillingCountry
+    - litify_pm__lit_Billing_County__c
+    - BillingGeocodeAccuracy
+    - BillingLatitude
+    - BillingLongitude
+    - BillingState
+    - BillingStreet
+    - BillingPostalCode
+    - CleanStatus
+    - DandbCompanyId
+    - DunsNumber
+    - Jigsaw
+    - litify_pm__Date_of_birth__c
+    - litify_pm__Email__c
+    - NumberOfEmployees
+    - litify_pm__First_Name__c
+    - litify_pm__Gender__c
+    - Industry
+    - litify_pm__lit_Is_Deceased__c
+    - litify_pm__Last_Called_At__c
+    - litify_pm__Last_Emailed_At__c
+    - litify_pm__Last_Name__c
+    - NaicsCode
+    - NaicsDesc
+    - OperatingHoursId
+    - Ownership
+    - ParentId
+    - litify_pm__Phone_Home__c
+    - litify_pm__Phone_Mobile__c
+    - litify_pm__Phone_Other__c
+    - litify_pm__Phone_Work__c
+    - RecordTypeId
+    - litify_pm__Salutation__c
+    - ShippingCity
+    - ShippingCountry
+    - litify_pm__lit_Shipping_County__c
+    - ShippingGeocodeAccuracy
+    - ShippingLatitude
+    - ShippingLongitude
+    - ShippingState
+    - ShippingStreet
+    - ShippingPostalCode
+    - Sic
+    - SicDesc
+    - litify_pm__SLA__c
+    - litify_pm__Social_Security_Number__c
+    - TickerSymbol
+    - litify_pm__Total_Calls__c
+    - litify_pm__Total_Emails__c
+    - Tradestyle
+    - litify_pm__Vendor__c
+    - Website
+    - YearStarted
+  OperatingHours:
+    fields:
+    - Name
+    - TimeZone
+  litify_pm__Case_Type__c:
+    fields:
+    - Name
+    - litify_pm__ExternalId__c
+    - litify_pm__Is_Available__c
+    - litify_pm__Litigation_Type__c
+    - litify_pm__LRN_Case_Type__c
+  litify_pm__Intake__c:
+    fields:
+    - litify_pm__Browser__c
+    - litify_pm__Case_Address_1__c
+    - litify_pm__Case_Address_2__c
+    - litify_pm__Case_City__c
+    - litify_pm__Case_Postal_Code__c
+    - litify_pm__Case_Quality_Score__c
+    - litify_pm__Case_State__c
+    - litify_pm__Case_Type__c
+    - litify_pm__Client__c
+    - litify_pm__Converted_Date__c
+    - litify_pm__Description__c
+    - litify_pm__Device_Type2__c
+    - litify_pm__Device_Type__c
+    - litify_pm__Display_Name__c
+    - litify_pm__Email__c
+    - litify_pm__lit_Exact_Source__c
+    - litify_pm__First_Name__c
+    - litify_pm__Incident_Date__c
+    - litify_pm__Intake_Assigned_to_Current_User__c
+    - litify_pm__IsConverted__c
+    - litify_pm__Last_Called_At__c
+    - litify_pm__Last_Emailed_At__c
+    - litify_pm__Last_Name__c
+    - litify_pm__Matter__c
+    - litify_pm__Matter_Created_Date__c
+    - litify_pm__Matter_Owner__c
+    - litify_pm__Open_Date__c
+    - litify_pm__Phone__c
+    - litify_pm__Qualified__c
+    - litify_pm__Questionnaire_End_Date__c
+    - litify_pm__Questionnaire_Last_Modified__c
+    - litify_pm__Questions_and_answers__c
+    - litify_pm__Questionnaire_Start_Date__c
+    - RecordTypeId
+    - litify_pm__Referral__c
+    - litify_pm__Referred_Out_Date__c
+    - litify_pm__Retainer_Agreement_Sent_Date__c
+    - litify_pm__Retainer_Agreement_Signed__c
+    - litify_pm__Search_Engine__c
+    - litify_pm__Sign_Up_Method__c
+    - litify_pm__Source__c
+    - litify_pm__Source_Type__c
+    - litify_pm__Status__c
+    - litify_pm__Statute_of_Limitations_Date__c
+    - litify_pm__Total_Calls__c
+    - litify_pm__Total_Emails__c
+    - litify_pm__Turn_Down_Details__c
+    - litify_pm__Turn_Down_Reason__c
+    - litify_pm__Turned_Down_Date__c
+    - litify_pm__Under_Review_Date__c
+    - litify_pm__UTM_Campaign__c
+    - litify_pm__UTM_Content__c
+    - litify_pm__UTM_Medium__c
+    - litify_pm__UTM_Source__c
+    - litify_pm__UTM_Term__c
+    - litify_pm__Working_Date__c
+  litify_pm__Matter__c:
+    fields:
+    - litify_pm__Abbreviated_Users_1__c
+    - litify_pm__Abbreviated_Users_2__c
+    - litify_pm__Abbreviated_Users_3__c
+    - litify_pm__Amount_Due_to_Client__c
+    - litify_pm__Billable_Matter__c
+    - litify_pm__Billing_Type__c
+    - litify_pm__Budget__c
+    - litify_pm__Case_Title__c
+    - litify_pm__Client_Portal_Status__c
+    - litify_pm__Close_Date__c
+    - litify_pm__Closed_Date__c
+    - litify_pm__Closed_Reason_Details__c
+    - litify_pm__Closed_Reason__c
+    - litify_pm__Contingency_Fee_Rate__c
+    - litify_pm__Description__c
+    - litify_pm__Discharge_Date__c
+    - litify_pm__Display_Name__c
+    - litify_pm__Docket_Number__c
+    - litify_pm__Fee_Amount__c
+    - litify_pm__FeesDueToOthers__c
+    - litify_pm__Filed_Date__c
+    - litify_pm__Gross_Recovery__c
+    - litify_pm__Hard_Costs__c
+    - litify_pm__Hourly_Rate__c
+    - litify_pm__Ignore_Default_Plan__c
+    - litify_pm__Incident_date__c
+    - litify_pm__Last_Called_At__c
+    - litify_pm__Last_Emailed_At__c
+    - litify_pm__Limitations_date_satisfied__c
+    - litify_pm__Lost_Reason__c
+    - litify_pm__Manual_Statute_of_Limitations__c
+    - litify_pm__Matter_Address_1__c
+    - litify_pm__Matter_Address_2__c
+    - litify_pm__Matter_City__c
+    - litify_pm__Matter_Has_Budget__c
+    - litify_pm__Matter_Postal_Code__c
+    - litify_pm__Matter_State__c
+    - litify_pm__Matter_Team_Modified__c
+    - litify_pm__Moved_to_Litigation__c
+    - litify_pm__Net_Attorney_Fee__c
+    - litify_pm__Net_Recovery__c
+    - litify_pm__Notify_users_when_budget_reached__c
+    - litify_pm__Open_Date__c
+    - litify_pm__Pending_Date__c
+    - litify_pm__Pre_Lit_Offer_Amount__c
+    - litify_pm__Soft_Costs__c
+    - litify_pm__Source_Type__c
+    - litify_pm__Status__c
+    - litify_pm__Statute_Of_Limitations__c
+    - litify_pm__Total_Calls__c
+    - litify_pm__Total_Emails__c
+    - litify_pm__Total_Matter_Value__c
+    - litify_pm__Trial_Date__c
+    - litify_pm__Turn_Down_Details__c
+    - litify_pm__Use_same_client_location__c
+    - litify_pm__lit_Exact_Source__c
+    - litify_pm__lit_Matter_County__c
+    - litify_pm__lit_Partner_Attorney_Fee__c
+    - litify_pm__lit_Referral_Partner_Fee_Percent__c
+    - litify_pm__lit_Case_Manager__c
+    - litify_pm__Case_Type__c
+    - litify_pm__Client__c
+    - litify_pm__Companion__c
+    - litify_pm__Court__c
+    - litify_pm__Matter_Plan__c
+    - litify_pm__Default_Matter_Team__c
+    - litify_pm__OpposingParty__c
+    - litify_pm__Originating_Attorney__c
+    - litify_pm__Primary_Intake__c
+    - litify_pm__Principal_Attorney__c
+    - RecordTypeId
+    - litify_pm__Referral__c
+    - litify_pm__lit_Referral_Partner__c
+    - litify_pm__Source__c
+    - litify_pm__Matter_Stage_Activity__c
+    - litify_pm__Starting_Matter_Stage_Override__c
+  litify_pm__Referral__c:
+    fields:
+    - litify_pm__Client_First_Name__c
+    - litify_pm__Client_Last_Name__c
+  litify_pm__Source__c:
+    fields: []
+  litify_pm__Companion__c:
+    fields: []
+  litify_pm__Matter_Plan__c:
+    fields: []
+  litify_pm__Default_Matter_Team__c:
+    fields: []
+  litify_pm__Firm__c:
+    fields:
+    - litify_pm__ExternalId__c
+  litify_pm__Matter_Stage_Activity__c:
+    fields:
+    - litify_pm__Order__c
+    - litify_pm__Stage_Status__c
+  litify_pm__Matter_Stage__c:
+    fields:
+    - litify_pm__Stage_Order__c

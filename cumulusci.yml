@@ -4,6 +4,13 @@ project:
     package:
         name: Client-Lanier-2GUP
         api_version: '62.0'
+    dependencies:
+        - github: https://github.com/BrioGit/BRIOLabs-SF-Base
+        - github: https://github.com/SFDO-Community/declarative-lookup-rollup-summaries
+        ### - version_id: 04t1T00000072EQ ### Litify Version 27.3
+        ###- version_id: 04t1T0000003w1I ### Litify Version 29
+        - version_id:  04tHs000001Eq9X  ### Litify Version 32.8
+        - version_id:  04tDn000000NfVyIAK  ### Litify Utilities Version 1.3
     git:
         default_branch: 'main'
         prefix_feature: 'feature/'
@@ -11,6 +18,12 @@ project:
         prefix_release: 'release/'
     source_format: sfdx
 
+sources:
+    litify:
+        github: https://github.com/nimba-solutions/litify-mdapi
+        allow_remote_code: True
+
+### Tasks ######################################################################
 tasks:
     robot:
         options:
@@ -26,3 +39,48 @@ tasks:
     run_tests:
         options:
             required_org_code_coverage_percent: 75
+
+    deploy_dev_config:
+        class_path: cumulusci.tasks.salesforce.Deploy
+        options:
+            path: unpackaged/config/dev/src
+
+    assign_litify_permission_sets:
+        class_path: cumulusci.tasks.salesforce.users.permsets.AssignPermissionSets
+        group: "LitifyMDAPI"
+        options:
+            api_names: LitifyMDAPI
+    
+    load_sample_data:
+        options:
+            drop_missing_schema: True
+
+###  Create Package Permission Set and Assign Here  ################################
+    assign_unpackaged_permission_sets:
+        class_path: cumulusci.tasks.salesforce.users.permsets.AssignPermissionSets
+        options:
+            api_names: PERMISSION_SET_NAME_HERE
+
+### Flows ######################################################################
+flows:
+
+    config_dev:
+        steps:
+            3.0:
+                task: deploy_dev_config
+            # 3.1:
+            #    task: assign_unpackaged_permission_sets
+            3.3: 
+                flow: litify:configure_mdapi
+    
+    config_apextest:
+        steps:
+            3.1:
+                task: assign_unpackaged_permission_sets
+            3.2: 
+                flow: litify:configure_mdapi
+    
+    config_managed:
+        steps:
+            3.1:
+                task: assign_unpackaged_permission_sets

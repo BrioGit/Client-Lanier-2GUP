@@ -43,3 +43,19 @@ Insert Contacts:
     lookups:
         AccountId:
             table: Account
+Insert Case Types: 
+    sf_object: litify_pm__Case_Type__c
+    table: litify_pm__Case_Type__c
+    fields: 
+        Name: Name
+        litify_pm__Is_Local__c: litify_pm__Is_Local__c
+        litify_pm__Is_Available__c: litify_pm__Is_Available__c
+        litify_pm__Litify_com_ID__c: litify_pm__Litify_com_ID__c
+Insert Matters: 
+    sf_object: litify_pm__Matter__c 
+    table: litify_pm__Matter__c 
+    lookups:
+        litify_pm__Case_Type__c: 
+            table: litify_pm__Case_Type__c
+        litify_pm__Client__c:
+            table: Account
