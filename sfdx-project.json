@@ -1,1 +1,20 @@
-{"packageDirectories": [{"path": "force-app", "default": true}], "namespace": null, "sourceApiVersion": "62.0"}
+{
+    "packageDirectories": [
+      {
+        "path": "force-app",
+        "default": true,
+        "package": "Client-Lanier-2GUP",
+        "versionName": "ver 0.1",
+        "versionNumber": "0.1.0.NEXT",
+        "versionDescription": "",
+        "dependencies": [ 
+          {
+            "subscriberPackageVersionId": "04tHs000001Eq9X"
+         }
+         ]
+      }
+    ],
+    "name": "Client-Lanier-2GUP",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "62.0"
+ }
